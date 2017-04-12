@@ -1,11 +1,11 @@
 #pragma once
 #include "Container.h"
 
-class PushPopContainer: Container {
+class PushPopContainer: public virtual Container {
 public:
-	virtual bool push(int value);
-	virtual int pop();
-	virtual int peek() const;
+	virtual bool push(int value) = 0;
+	virtual int pop() = 0;
+	virtual int peek() const = 0;
 
-	virtual ~PushPopContainer();
+	virtual ~PushPopContainer() = 0;
 };
