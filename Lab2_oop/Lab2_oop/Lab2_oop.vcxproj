@@ -88,6 +88,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,11 +146,35 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Container.h" />
+    <ClInclude Include="DataNode.h" />
+    <ClInclude Include="Deque.h" />
+    <ClInclude Include="IndexedContainer.h" />
+    <ClInclude Include="InsertableContainer.h" />
+    <ClInclude Include="LinkedDeque.h" />
+    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="PushPopContainer.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="Stack.h" />
+    <ClInclude Include="StaticArray.h" />
+    <ClInclude Include="StaticDeque.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Container.cpp" />
+    <ClCompile Include="DataNode.cpp" />
+    <ClCompile Include="Deque.cpp" />
+    <ClCompile Include="IndexedContainer.cpp" />
+    <ClCompile Include="InsertableContainer.cpp" />
     <ClCompile Include="Lab2_oop.cpp" />
+    <ClCompile Include="LinkedDeque.cpp" />
+    <ClCompile Include="LinkedList.cpp" />
+    <ClCompile Include="PushPopContainer.cpp" />
+    <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="StaticArray.cpp" />
+    <ClCompile Include="StaticDeque.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
