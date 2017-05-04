@@ -7,5 +7,5 @@ public:
 	virtual int pop() = 0;
 	virtual int peek() const = 0;
 
-	virtual ~PushPopContainer() = 0;
+	virtual ~PushPopContainer() = 0 {};
 };

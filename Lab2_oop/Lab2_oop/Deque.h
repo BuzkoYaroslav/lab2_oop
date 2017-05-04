@@ -10,5 +10,5 @@ public:
 	virtual int peekFront() const = 0;
 	virtual int peekBack() const = 0;
 	
-	virtual ~Deque() = 0;
+	virtual ~Deque() = 0 {};
 };

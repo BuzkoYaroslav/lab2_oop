@@ -151,7 +151,6 @@
     <ClInclude Include="Deque.h" />
     <ClInclude Include="IndexedContainer.h" />
     <ClInclude Include="InsertableContainer.h" />
-    <ClInclude Include="LinkedDeque.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="PushPopContainer.h" />
     <ClInclude Include="Queue.h" />
@@ -162,15 +161,9 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Container.cpp" />
     <ClCompile Include="DataNode.cpp" />
-    <ClCompile Include="Deque.cpp" />
-    <ClCompile Include="IndexedContainer.cpp" />
-    <ClCompile Include="InsertableContainer.cpp" />
     <ClCompile Include="Lab2_oop.cpp" />
-    <ClCompile Include="LinkedDeque.cpp" />
     <ClCompile Include="LinkedList.cpp" />
-    <ClCompile Include="PushPopContainer.cpp" />
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="Stack.cpp" />
     <ClCompile Include="StaticArray.cpp" />

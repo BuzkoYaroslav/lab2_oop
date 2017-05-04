@@ -23,7 +23,7 @@ const int countPushFront = 5;
 
 int main()
 {
-	PushPopContainer **arr1 = new PushPopContainer*[3];
+	/*PushPopContainer **arr1 = new PushPopContainer*[3];
 	IndexedContainer **arr2 = new IndexedContainer*[2];
 	Deque **arr3 = new Deque*[3];
 
@@ -109,6 +109,46 @@ int main()
 
 	cout << arr3[0]->toString() << endl;
 	cout << arr3[1]->toString() << endl;
+*/
+
+	Container **cont = new Container*[2];
+
+	cont[0] = new StaticDeque();
+	cont[1] = new Stack();
+
+	PushPopContainer *ppc;
+	Deque *d;
+
+	for (int i = 0; i < 2; i++) {
+		if (ppc = dynamic_cast<PushPopContainer*>(cont[i])) {
+			for (int j = 1; j < 10; j++)
+			ppc->push(j);
+		} 
+		if (d = dynamic_cast<Deque*>(cont[i])) {
+			for (int j = 1; j < 10; j++) {
+				d->pushFront(j);
+				d->pushBack(-(j));
+			}
+		}
+		cout << cont[i]->toString() << endl;
+	}
+
+
+
+	for (int i = 0; i < 2; i++) {
+		while (!cont[i]->isEmpty())
+		{
+			int value;
+			if (ppc = dynamic_cast<PushPopContainer*>(cont[i])) {
+				value = ppc->pop();
+			}
+			if (d = dynamic_cast<Deque*>(cont[i])) {
+				value = d->popBack();
+			}
+
+			cout << "Popped element from " << i << " container = " << value << endl;
+		}
+	}
 
 	_getch();
 
